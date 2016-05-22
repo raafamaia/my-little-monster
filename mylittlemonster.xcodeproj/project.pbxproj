@@ -13,6 +13,7 @@
 		5829A3BA1CF2480600CD03B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5829A3B91CF2480600CD03B4 /* Assets.xcassets */; };
 		5829A3BD1CF2480600CD03B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5829A3BB1CF2480600CD03B4 /* LaunchScreen.storyboard */; };
 		5829A3C51CF257F800CD03B4 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829A3C41CF257F800CD03B4 /* DragImg.swift */; };
+		5829A3C91CF25F3200CD03B4 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829A3C81CF25F3200CD03B4 /* MonsterImg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5829A3BC1CF2480600CD03B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5829A3BE1CF2480600CD03B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5829A3C41CF257F800CD03B4 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
+		5829A3C81CF25F3200CD03B4 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5829A3BB1CF2480600CD03B4 /* LaunchScreen.storyboard */,
 				5829A3BE1CF2480600CD03B4 /* Info.plist */,
 				5829A3C41CF257F800CD03B4 /* DragImg.swift */,
+				5829A3C81CF25F3200CD03B4 /* MonsterImg.swift */,
 			);
 			path = mylittlemonster;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5829A3C91CF25F3200CD03B4 /* MonsterImg.swift in Sources */,
 				5829A3C51CF257F800CD03B4 /* DragImg.swift in Sources */,
 				5829A3B51CF2480600CD03B4 /* ViewController.swift in Sources */,
 				5829A3B31CF2480600CD03B4 /* AppDelegate.swift in Sources */,
