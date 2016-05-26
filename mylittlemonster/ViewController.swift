@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
+    @IBOutlet weak var ReviveBtn: UIButton!
+    @IBOutlet weak var bgRevive: UIView!
     
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
@@ -64,6 +66,12 @@ class ViewController: UIViewController {
         }
         startTimer()
 
+    }
+    
+    @IBAction func onRevivePressed(sender: UIButton) {
+        monsterImg.playReviveAnimation()
+        resetGameState()
+        
     }
     
     func itemDroppedOnCharacter(notif: AnyObject) {
@@ -120,6 +128,27 @@ class ViewController: UIViewController {
             }
         }
         
+        setRandomItem()
+        
+        
+    }
+    
+    func resetGameState() {
+        penalty1Img.alpha = DIM_ALPHA
+        penalty2Img.alpha = DIM_ALPHA
+        penalty3Img.alpha = DIM_ALPHA
+        
+        penalties = 0
+        monsterHappy = false
+        currentItem = 0
+        startTimer()
+        setRandomItem()
+        ReviveBtn.hidden = true
+        bgRevive.hidden = true
+
+    }
+    
+    func setRandomItem() {
         let rand = arc4random_uniform(2) // 0 or 1
         
         if rand == 0 {
@@ -138,15 +167,14 @@ class ViewController: UIViewController {
         
         currentItem = rand
         monsterHappy = false
-        
-        
-        
     }
     
     func gameOver() {
         sfxDeath.play()
         timer.invalidate()
         monsterImg.playDeathAnimation()
+        ReviveBtn.hidden = false
+        bgRevive.hidden = false
     }
 }
 

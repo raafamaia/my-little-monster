@@ -92,6 +92,28 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6v2-hL-3kT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.17948719935539437" green="0.17948719935539437" blue="0.17948719935539437" alpha="0.41379310344827586" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTN-Zk-xWw">
+                                <rect key="frame" x="228" y="251" width="145" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="I3c-jH-efi"/>
+                                    <constraint firstAttribute="height" constant="64" id="cju-j8-ebQ"/>
+                                    <constraint firstAttribute="height" constant="97" id="lV0-tm-XtI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Revive" backgroundImage="stone"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cju-j8-ebQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onRevivePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eW-Sx-Mdb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -99,23 +121,31 @@
                             <constraint firstAttribute="trailing" secondItem="iH1-LQ-azv" secondAttribute="trailing" id="6XV-pX-fxN"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Xj-iR-uc4"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="top" secondItem="8lN-sK-0Tm" secondAttribute="bottom" constant="15" id="7RD-ur-240"/>
+                            <constraint firstItem="NTN-Zk-xWw" firstAttribute="centerY" secondItem="6v2-hL-3kT" secondAttribute="centerY" id="8aB-8w-wDD"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ap-bl-F6Y"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bid-HP-4oh"/>
                             <constraint firstItem="8lN-sK-0Tm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FfK-Rk-hzK"/>
+                            <constraint firstItem="NTN-Zk-xWw" firstAttribute="centerY" secondItem="xHI-q8-WC1" secondAttribute="centerY" id="FsU-aR-eck"/>
                             <constraint firstItem="5WH-xY-eBk" firstAttribute="centerY" secondItem="8lN-sK-0Tm" secondAttribute="centerY" id="MNm-C7-Sx8"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Mat-wQ-GjP"/>
+                            <constraint firstItem="NTN-Zk-xWw" firstAttribute="centerX" secondItem="xHI-q8-WC1" secondAttribute="centerX" id="OXP-8n-D74"/>
                             <constraint firstItem="iH1-LQ-azv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qk4-vz-SMb"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SPG-DE-SoH"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="top" secondItem="8lN-sK-0Tm" secondAttribute="bottom" constant="15" id="UNv-Hw-zNw"/>
                             <constraint firstAttribute="trailing" secondItem="xHI-q8-WC1" secondAttribute="trailing" id="Uz4-0f-R5C"/>
+                            <constraint firstAttribute="trailing" secondItem="6v2-hL-3kT" secondAttribute="trailing" id="Weq-F0-W4g"/>
                             <constraint firstItem="8lN-sK-0Tm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="atQ-uP-pIo"/>
                             <constraint firstItem="5WH-xY-eBk" firstAttribute="centerX" secondItem="8lN-sK-0Tm" secondAttribute="centerX" constant="-2.5" id="byd-14-pAt"/>
+                            <constraint firstItem="6v2-hL-3kT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cWc-JL-iak"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iH1-LQ-azv" secondAttribute="bottom" id="k57-sW-FLR"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mJ7-Ra-2nr"/>
                             <constraint firstItem="TsN-QV-xBw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-120" id="pD8-Ut-Uih"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6v2-hL-3kT" secondAttribute="bottom" id="pS3-j2-YHj"/>
+                            <constraint firstItem="NTN-Zk-xWw" firstAttribute="centerX" secondItem="6v2-hL-3kT" secondAttribute="centerX" id="qOK-39-zlC"/>
                             <constraint firstItem="kIj-uC-uiJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uE5-Pz-bzd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xHI-q8-WC1" secondAttribute="bottom" id="uKX-5C-Id0"/>
                             <constraint firstItem="xHI-q8-WC1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v9U-Rt-7gc"/>
+                            <constraint firstItem="6v2-hL-3kT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xd5-bp-jey"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TsN-QV-xBw" secondAttribute="bottom" constant="41" id="zwY-5F-OTn"/>
                         </constraints>
                         <variation key="default">
@@ -127,6 +157,8 @@
                                 <exclude reference="UNv-Hw-zNw"/>
                                 <exclude reference="mJ7-Ra-2nr"/>
                                 <exclude reference="uE5-Pz-bzd"/>
+                                <exclude reference="FsU-aR-eck"/>
+                                <exclude reference="OXP-8n-D74"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -146,6 +178,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="ReviveBtn" destination="NTN-Zk-xWw" id="4wk-LU-60f"/>
+                        <outlet property="bgRevive" destination="6v2-hL-3kT" id="37R-4W-Pq1"/>
                         <outlet property="foodImg" destination="qYg-zi-YXu" id="R0R-7J-wZ3"/>
                         <outlet property="hearImg" destination="lDH-ev-h0r" id="gcv-w4-rtM"/>
                         <outlet property="monsterImg" destination="TsN-QV-xBw" id="TYf-e5-d3f"/>
@@ -167,5 +201,6 @@
         <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
         <image name="skull" width="95" height="98"/>
+        <image name="stone" width="96" height="100"/>
     </resources>
 </document>
